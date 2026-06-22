@@ -1,0 +1,15 @@
+# Heavy local backups of original media (exceed GitHub's 100MB limit)
+_media_originals/
+*.bak
+
+# Design experiments and frozen snapshots (kept locally, not deployed)
+v2/
+v3/
+_design_v1_warm/
+_design_v3_marine/
+
+# Internal content/strategy document — not for the public repo
+portfolio_master.md
+
+# Tooling
+.claude/
