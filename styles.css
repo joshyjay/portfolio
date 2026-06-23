@@ -378,6 +378,14 @@ a { color: inherit; text-decoration: none; }
 .cv-detail p:last-child { margin: 0; color: var(--ink-2); }
 @media (max-width: 600px) { .cv-row { grid-template-columns: 1fr; gap: 8px; } }
 
+/* CV profile (portrait + about + contact) */
+.cv-profile-block { padding-top: clamp(18px, 3vw, 38px); }
+.cv-profile { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 300px 1fr; gap: clamp(28px, 5vw, 64px); align-items: start; }
+.profile-links { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 28px; font-family: var(--mono); font-size: 13px; }
+.profile-links a { color: var(--ink-2); border-bottom: 1px solid var(--line); padding-bottom: 2px; transition: color .25s, border-color .25s; }
+.profile-links a:hover { color: var(--accent); border-color: var(--accent); }
+@media (max-width: 760px) { .cv-profile { grid-template-columns: 1fr; } .cv-profile .portrait { max-width: 300px; } }
+
 /* ---------- Hire ---------- */
 .hire-facts-wrap { padding-top: 0; }
 .hire-facts { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }

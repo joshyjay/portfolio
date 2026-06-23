@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Joshua Anani — Process and Chemical Engineer, Applied ML</title>
-  <meta name="description" content="Joshua Anani is a process and chemical engineer in Copenhagen building the imaging and data systems that automate marine biofouling assessment." />
+  <meta name="description" content="Joshua Anani automates marine biofouling assessment, from cameras in the water to a measured result." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -13,74 +13,159 @@
 <body id="top">
   <div class="grain" aria-hidden="true"></div>
 
-  <header class="hdr solid" id="hdr">
+  <!-- Header -->
+  <header class="hdr" id="hdr">
     <a class="name" href="index.html">Joshua Anani</a>
     <span class="status"><span class="dot"></span>Available for permanent roles</span>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     <nav id="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="work.html">Work</a>
+      <a href="index.html" class="active">Work</a>
       <a href="cv.html">CV</a>
       <a href="hire.html" class="nav-cta">Hire me</a>
     </nav>
   </header>
 
   <!-- Hero -->
-  <section class="home-hero">
-    <div class="home-hero-inner">
-      <div class="home-intro reveal">
-        <p class="eyebrow">Joshua Anani — Copenhagen, Denmark</p>
-        <h1>Process and chemical engineer building the systems that automate marine biofouling assessment.</h1>
-        <p class="home-lead">I combine coatings chemistry, field instrumentation, and applied machine learning to turn manual inspection into consistent, repeatable measurement. I own the work end to end, from the cameras in the water to the dashboards that keep it running.</p>
-        <div class="home-cta">
-          <a class="btn btn-primary" href="work.html">See the work →</a>
-          <a class="btn" href="hire.html">Hire me</a>
-        </div>
-        <div class="home-links">
-          <a href="cv.html">CV</a>
-          <a href="https://www.linkedin.com/in/joshua-anani/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://scholar.google.com/citations?user=iU2orOQAAAAJ" target="_blank" rel="noopener">Scholar</a>
-          <a href="https://orcid.org/0000-0002-2112-3881" target="_blank" rel="noopener">ORCID</a>
-          <a href="mailto:joshuaanani00@gmail.com">Email</a>
-        </div>
-      </div>
-      <figure class="home-portrait reveal">
-        <img src="media/2.jpg" alt="Portrait of Joshua Anani" />
-        <figcaption>Joshua Anani · Copenhagen</figcaption>
-      </figure>
+  <section class="hero">
+    <div class="hero-media"><img src="media/1.jpg" alt="Coated antifouling test panels imaged underwater" fetchpriority="high" /></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Process &amp; Chemical Engineer — Applied ML</p>
+      <h1>Automating marine biofouling assessment</h1>
+      <p class="hero-sub">From cameras in the water to a measured result. I build and operate the imaging and data systems that replace manual inspection with consistent, repeatable measurement.</p>
+    </div>
+    <div class="hero-foot">
+      <span>Copenhagen, Denmark</span>
+      <span>DTU · CoaST Maritime Test Centre</span>
+      <span class="scroll"><span class="bar"></span> Scroll</span>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="section now-band" id="about">
-    <div class="kicker">About</div>
-    <div class="about-prose reveal">
-      <p>Over three years at DTU I watched a system I built become the equipment a test centre reached for by default, replacing inspection that used to be done by hand. That shift, from a working prototype to something people genuinely rely on, is the part of technical work I care about most.</p>
-      <p>I am a chemical and process engineer who builds and operates the data and imaging systems behind technical work. My PhD measured antifouling coating performance from underwater images at the CoaST Maritime Test Centre, where I designed and deployed three autonomous camera systems that ran continuously for more than two years. Around them I built the machine learning and image processing at the core, and the databases and automated deployment that carried raw field images through to quantitative results.</p>
-      <p>Machine learning and computer vision are tools I reach for rather than the whole of what I do. What I care about is the path from a physical process to a result someone can trust. I came to it across more than one discipline and more than one country, training as an engineer in Ghana, moving into coatings and materials research in Egypt, and building applied data systems in Denmark.</p>
-      <p>I am based in Copenhagen and drawn to problems where a physical process meets the software built to measure it.</p>
-    </div>
-  </section>
-
-  <!-- Selected work teaser -->
+  <!-- Intro -->
   <section class="section">
-    <div class="section-head reveal">
-      <p class="kicker" style="margin-bottom:0">Selected work</p>
-      <a class="head-link" href="work.html">See the full pipeline →</a>
+    <div class="intro reveal">
+      <p>Every ship grows a living layer on its hull. <span class="accent">Barnacles, algae, and slime</span> add drag and burn fuel. The coatings that resist them are tested on panels at sea, and for years that was judged by eye. My PhD rebuilt that judgement as a measurement, running as <span class="accent">one connected pipeline</span>.</p>
     </div>
-    <div class="home-work">
-      <a class="hw-card reveal" href="work.html">
-        <div class="hw-media"><img src="media/3.jpg" alt="Underwater imaging system on the dock" loading="lazy" /></div>
-        <div class="hw-body"><span class="hw-no">01</span><h3>Autonomous underwater imaging</h3><p>Cameras, optics, and lighting selected, integrated, and calibrated, running for years as standard infrastructure.</p></div>
-      </a>
-      <a class="hw-card reveal" href="work.html">
-        <div class="hw-media"><img src="media/5.png" alt="Panel segmented into clean paint, algae, animals" loading="lazy" /></div>
-        <div class="hw-body"><span class="hw-no">05</span><h3>Settlement &amp; growth models</h3><p>Segmentation that measures algae and barnacle settlement across every paint colour. Openly published.</p></div>
-      </a>
-      <a class="hw-card reveal" href="work.html">
-        <div class="hw-media"><video src="media/14.mp4" muted autoplay loop playsinline preload="metadata"></video></div>
-        <div class="hw-body"><span class="hw-no">06</span><h3>Dynamic evaluation</h3><p>In-situ tracking of panels in motion on a rotating rig, closer to a real hull in service.</p></div>
-      </a>
+  </section>
+
+  <!-- Ship band -->
+  <section class="band reveal">
+    <img src="media/ship.jpg" alt="A ship hull at the waterline, where marine biofouling takes hold" loading="lazy" />
+    <div class="band-cap">
+      <span><span class="accent">The problem</span> — fouling on a working hull</span>
+      <span>Drag · fuel · emissions</span>
+    </div>
+  </section>
+
+  <!-- Work / pipeline -->
+  <section class="section" id="work">
+    <p class="kicker">Selected work — the PhD pipeline</p>
+    <div class="pipeline">
+
+      <!-- 01 -->
+      <article class="stage reveal">
+        <div class="stage-info">
+          <div class="stage-no">01</div>
+          <p class="stage-kicker">Stage one</p>
+          <h3>Cameras underwater</h3>
+          <p>The pipeline starts with seeing clearly underwater. I selected and integrated the cameras, optics, and lighting, calibrated them against a submerged target, and built the housings that hold each panel in a fixed position. Three systems have run continuously for more than two years, and have become the standard imaging equipment the test centre relies on.</p>
+          <ul class="tags"><li>Camera integration</li><li>Optics &amp; calibration</li><li>OpenCV</li><li>Field instrumentation</li></ul>
+          <div class="links"><a href="https://www.tandfonline.com/doi/full/10.1080/08927014.2025.2610308" target="_blank" rel="noopener">Published in Biofouling, 2026 ↗</a></div>
+        </div>
+        <div class="stage-media">
+          <figure class="plate"><img src="media/3.jpg" alt="Imaging system on the dock" loading="lazy" /><figcaption><span class="id">CAM / 01</span><span>Imaging system on the dock</span></figcaption></figure>
+          <figure class="plate"><img src="media/4.jpg" alt="Camera housing submerged in the water" loading="lazy" /><figcaption><span class="id">CAM / 02</span><span>Camera housing submerged</span></figcaption></figure>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="stage reveal">
+        <div class="stage-info">
+          <div class="stage-no">02</div>
+          <p class="stage-kicker">Stage two</p>
+          <h3>Autonomous field operation</h3>
+          <p>Cameras are only useful when they keep running on their own. Each system is a Raspberry Pi in a sealed enclosure, capturing on a schedule, switching its own lights, and cleaning its own lens. I packaged the software in Docker, deployed it with a GitLab pipeline that ships to each device automatically, and wired everything to PostgreSQL databases and live dashboards.</p>
+          <ul class="tags"><li>Raspberry Pi</li><li>Docker</li><li>GitLab CI/CD</li><li>PostgreSQL</li><li>Dashboards</li></ul>
+        </div>
+        <div class="stage-media">
+          <div class="sys-panel">
+            <div class="sys-head"><span class="dotg"></span> coast-edge-01 · live</div>
+            <ul>
+              <li><span class="ok">●</span><span class="svc">camera-capture</span><span class="v">running</span></li>
+              <li><span class="ok">●</span><span class="svc">image-pipeline</span><span class="v">running</span></li>
+              <li><span class="ok">●</span><span class="svc">postgres</span><span class="v">healthy</span></li>
+              <li><span class="mut">deploy</span><span class="svc">gitlab-ci → main → device</span><span class="v">✓</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="stage reveal">
+        <div class="stage-info">
+          <div class="stage-no">03</div>
+          <p class="stage-kicker">Stage three</p>
+          <h3>Image processing</h3>
+          <p>A raw underwater frame is murky, unevenly lit, and full of passing fish and debris. Before anything can be measured, the image has to be cleaned. I built the processing that returns a sharp, evenly lit, geometry corrected picture of each panel, stacking frames to remove drifting particles and fusing exposures for even light.</p>
+          <ul class="tags"><li>Raw &amp; Bayer processing</li><li>Frame stacking</li><li>Exposure fusion</li><li>Geometry correction</li></ul>
+        </div>
+        <div class="stage-media">
+          <figure class="plate">
+            <div class="ba">
+              <img class="ba-before" src="media/11.jpg" alt="Frame with fish and debris, before cleanup" loading="lazy" />
+              <img class="ba-after" src="media/12.jpg" alt="The same frame cleaned" loading="lazy" />
+              <span class="ba-tag"><span class="s s-before">Before</span><span class="s s-after">After</span></span>
+            </div>
+            <figcaption><span class="id">IMG / 01</span><span>The same frame, debris removed</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="stage reveal">
+        <div class="stage-info">
+          <div class="stage-no">04</div>
+          <p class="stage-kicker">Stage four</p>
+          <h3>Automatic panel identification</h3>
+          <p>A single frame can hold several panels, so before any fouling is measured each panel has to be found and labelled on its own. A detection model locates every panel in the image and gives it a consistent identity, so the right measurement stays attached to the right panel across the whole record.</p>
+          <ul class="tags"><li>Object detection</li><li>YOLO detection</li><li>Panel indexing</li></ul>
+        </div>
+        <div class="stage-media">
+          <figure class="plate"><video src="media/15.mp4" muted autoplay loop playsinline preload="metadata"></video><figcaption><span class="id">PID / 01</span><span>Each panel located and identified</span></figcaption></figure>
+        </div>
+      </article>
+
+      <!-- 05 -->
+      <article class="stage reveal">
+        <div class="stage-info">
+          <div class="stage-no">05</div>
+          <p class="stage-kicker">Stage five</p>
+          <h3>Barnacle settlement and algae growth</h3>
+          <p>With each panel identified, the models read its surface and measure what has grown on it, separating clean paint from algae and from animal settlement such as barnacles, consistently across every paint colour. The work is openly published with its data and code. A further model estimates the real height of barnacles from a flat photograph.</p>
+          <ul class="tags"><li>PyTorch</li><li>U-Net segmentation</li><li>XGBoost</li><li>Open data</li></ul>
+          <div class="links"><a href="https://doi.org/10.5281/zenodo.20594254" target="_blank" rel="noopener">Dataset ↗</a><a href="https://doi.org/10.5281/zenodo.20761755" target="_blank" rel="noopener">Code &amp; models ↗</a></div>
+        </div>
+        <div class="stage-media">
+          <figure class="plate"><img src="media/5.png" alt="Panel split into clean paint, algae, animals" loading="lazy" /><figcaption><span class="id">ML / 01</span><span>Split into clean paint, algae, animals</span></figcaption></figure>
+          <figure class="plate"><video src="media/6.mp4" muted autoplay loop playsinline preload="metadata"></video><figcaption><span class="id">ML / 02</span><span>Barnacle settlement over time</span></figcaption></figure>
+          <figure class="plate"><video src="media/7.mp4" muted autoplay loop playsinline preload="metadata"></video><figcaption><span class="id">ML / 03</span><span>Algae growth over time</span></figcaption></figure>
+        </div>
+      </article>
+
+      <!-- 06 -->
+      <article class="stage reveal">
+        <div class="stage-info">
+          <div class="stage-no">06</div>
+          <p class="stage-kicker">Stage six</p>
+          <h3>Dynamic biofouling evaluation</h3>
+          <p>The last stage follows panels in motion. On a rotating test rig the same identification and measurement run on panels as they move through the water, which brings the assessment closer to the conditions a real hull experiences and supports dynamic evaluation of how a coating performs in service.</p>
+          <ul class="tags"><li>In-situ tracking</li><li>Object detection</li><li>Dynamic evaluation</li></ul>
+        </div>
+        <div class="stage-media">
+          <figure class="plate"><video src="media/14.mp4" muted autoplay loop playsinline preload="metadata"></video><figcaption><span class="id">DYN / 01</span><span>Panels tracked in situ on the rotating rig</span></figcaption></figure>
+        </div>
+      </article>
+
     </div>
   </section>
 
@@ -99,5 +184,6 @@
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
