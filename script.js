@@ -15,6 +15,7 @@
     var setMenu = function (open) {
       nav.classList.toggle('open', open);
       menuBtn.classList.toggle('open', open);
+      if (hdr) hdr.classList.toggle('menu-open', open);
       menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
       menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       document.body.style.overflow = open ? 'hidden' : '';
