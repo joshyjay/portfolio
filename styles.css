@@ -78,6 +78,7 @@ a { color: inherit; text-decoration: none; }
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   border-bottom-color: transparent;
+  transition: none;
 }
 .hdr .name { font-family: var(--display); font-weight: 600; font-size: 18px; letter-spacing: 0.0em; white-space: nowrap; }
 .hdr .status { font-family: var(--mono); font-size: 13px; letter-spacing: 0.05em; color: var(--ink-2); display: flex; align-items: center; gap: 8px; }
@@ -104,14 +105,13 @@ a { color: inherit; text-decoration: none; }
   .hdr .status { display: none; }
   .menu-btn { display: flex; }
   .hdr nav {
+    display: none;
     position: fixed; inset: 0; z-index: 55;
-    background: rgba(8, 11, 13, 0.98); backdrop-filter: blur(8px);
+    background: var(--bg);
     flex-direction: column; justify-content: center; align-items: flex-start;
     gap: 4px; padding: 0 var(--pad);
-    opacity: 0; pointer-events: none; transform: translateY(-8px);
-    transition: opacity .35s ease, transform .35s ease;
   }
-  .hdr nav.open { opacity: 1; pointer-events: auto; transform: none; }
+  .hdr nav.open { display: flex; }
   .hdr nav a {
     font-family: var(--display); font-weight: 600; font-size: clamp(30px, 9vw, 44px);
     letter-spacing: -0.015em; text-transform: none; color: var(--ink); padding: 8px 0;

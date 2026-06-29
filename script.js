@@ -18,7 +18,6 @@
       if (hdr) hdr.classList.toggle('menu-open', open);
       menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
       menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-      document.body.style.overflow = open ? 'hidden' : '';
     };
     menuBtn.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
     [].slice.call(nav.querySelectorAll('a')).forEach(function (a) {
